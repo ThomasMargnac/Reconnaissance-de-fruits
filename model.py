@@ -17,7 +17,7 @@ if __name__ == '__main__' :
 	#On déclare et on entraine notre modèle
 	neigh = KNeighborsClassifier(n_neighbors=3)
 	neigh.fit(X_train, y_train)
-
+	
 	#On évalue notre modèle
 	train_acc = neigh.score(X_train, y_train)
 	print("\nTaux de reconnaissance en apprentissage : ", train_acc)
